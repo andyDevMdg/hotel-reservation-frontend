@@ -5,7 +5,6 @@ light gold: e4d58e
 
 .navbar{
     height: 50px;
-    background-color: #e4d58e;
     display: flex;
     justify-content: center;
 }
@@ -13,6 +12,45 @@ light gold: e4d58e
 .navContainer{
     width: 100%;
     max-width: 1024px;
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
     font-weight: 500;
+    color: black
+}
+
+.navButtonWhite{
+    margin-left: 20px;
+    border: solid black 1px;
+    padding: 11px 20px;
+    border-radius: 11px;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    transition: all 0.2s;
+}
+
+.navButtonWhite:hover{
+    background-color: #333333;
+    color: white;
+    border: solid #333333 1px;
+}
+
+.navButtonBlack{
+    margin-left: 20px;
+    border: solid black 1px;
+    padding: 11px 20px;
+    border-radius: 11px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    letter-spacing: 0.03em;
+    transition: all 0.2s;
+}
+
+.navButtonBlack:hover{
+    background-color: #333333;
+    border: solid #333333 1px;
 }
