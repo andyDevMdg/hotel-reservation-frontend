@@ -8,6 +8,7 @@ light gold: e4d58e
     color: white;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .headerContainer{
@@ -32,22 +33,53 @@ light gold: e4d58e
 }
 
 .headerBtn{
-    background-color: #333333;
+    background-color: white;
     border: solid #333333 2px;
     padding: 11px 20px;
     border-radius: 11px;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.01em;
-    color: white;
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.headerBtn:hover{
+    border: solid #333333 2px;
+    background-color: #333333;
+    color: white;
 }
 
 .headerSearch {
     height: 40px;
     background-color: white;
-    border: solid black 1px;
+    border: solid #333333 2px;
     border-radius: 11px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.headerIcon {
+    color: lightgray;
+}
+
+.headerSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerSearchInput {
+    border: none;
+    outline: none;
+}
+
+.headerSearchText {
+    color: lightgray;
+    cursor: pointer;
 }

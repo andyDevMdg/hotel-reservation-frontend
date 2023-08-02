@@ -34,6 +34,9 @@ function Header() {
                         <FontAwesomeIcon icon={ faPerson } className='headerIcon' />
                         <span className='headerSearchText'>2 adults 2 children 1 room</span>
                     </div>
+                    <div className="headerSearchItem">
+                        <button className="headerBtn">RECHERCHER</button>
+                    </div>
                 </div>
             </div>
         </div>
