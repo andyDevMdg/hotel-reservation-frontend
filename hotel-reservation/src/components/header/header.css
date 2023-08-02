@@ -1,3 +1,8 @@
+/*
+dark grey: 333333
+light gold: e4d58e
+*/
+
 .header{
     background-color: #e4d58e;
     color: white;
@@ -18,4 +23,21 @@
     width: fit-content;
     font-size: 22px;
     letter-spacing: 0.01em;
+    margin-bottom: 50px;
+}
+
+.headerDesc{
+    margin: 20px 0px;
+    letter-spacing: 0.01em;
+}
+
+.headerBtn{
+    background-color: #333333;
+    border: solid #333333 2px;
+    padding: 11px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: white;
+    cursor: pointer;
 }
