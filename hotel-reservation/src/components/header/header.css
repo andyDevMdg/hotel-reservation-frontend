@@ -35,9 +35,19 @@ light gold: e4d58e
     background-color: #333333;
     border: solid #333333 2px;
     padding: 11px 20px;
-    border-radius: 15px;
+    border-radius: 11px;
     font-size: 16px;
     letter-spacing: 0.01em;
     color: white;
     cursor: pointer;
+}
+
+.headerSearch {
+    height: 40px;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
