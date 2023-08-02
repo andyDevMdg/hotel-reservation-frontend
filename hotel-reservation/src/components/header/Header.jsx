@@ -3,7 +3,13 @@ import './header.css';
 
 function Header() {
   return (
-    <div className='header'>Header</div>
+    <div className='header'>
+        <div className="headerList">
+            <div className="headerListItem">
+                
+            </div>
+        </div>
+    </div>
   )
 }
 
