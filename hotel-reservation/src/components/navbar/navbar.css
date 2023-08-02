@@ -1,0 +1,18 @@
+/*
+dark grey: 18191A
+light gold: e4d58e
+*/
+
+.navbar{
+    height: 50px;
+    background-color: #e4d58e;
+    display: flex;
+    justify-content: center;
+}
+
+.navContainer{
+    width: 100%;
+    max-width: 1024px;
+    color: white;
+    font-weight: 500;
+}
