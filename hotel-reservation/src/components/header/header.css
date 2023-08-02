@@ -83,3 +83,8 @@ light gold: e4d58e
     color: lightgray;
     cursor: pointer;
 }
+
+.date {
+    position: absolute;
+    top: 60px;
+}
