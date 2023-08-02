@@ -4,3 +4,18 @@
     display: flex;
     justify-content: center;
 }
+
+.headerContainer{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+
+.headerListItem{
+    border: solid white 2px;
+    padding: 11px 20px;
+    border-radius: 11px;
+    width: fit-content;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+}

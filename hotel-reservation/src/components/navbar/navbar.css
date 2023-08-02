@@ -7,6 +7,7 @@ light gold: e4d58e
     height: 50px;
     display: flex;
     justify-content: center;
+    background-color: #e4d58e;
 }
 
 .navContainer{
@@ -36,6 +37,7 @@ light gold: e4d58e
     background-color: #333333;
     color: white;
     border: solid #333333 1px;
+    cursor: pointer;
 }
 
 .navButtonBlack{
@@ -53,4 +55,5 @@ light gold: e4d58e
 .navButtonBlack:hover{
     background-color: #333333;
     border: solid #333333 1px;
+    cursor: pointer;
 }

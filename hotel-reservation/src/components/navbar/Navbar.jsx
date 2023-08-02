@@ -7,8 +7,8 @@ function Navbar() {
         <div className="navContainer">
             <span className="logo">Hotel</span>
             <div className="navItem">
-                <button className="navButtonBlack">Sign Up</button>
-                <button className="navButtonWhite">Log in</button>
+                <button className="navButtonBlack">S'inscrire</button>
+                <button className="navButtonWhite">Se connecter</button>
             </div>
         </div>
     </div>

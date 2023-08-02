@@ -9,10 +9,13 @@ function Header() {
             <div className="headerContainer">
                 <div className="headerList">
                     <div className="headerListItem">
-                        <span>BOOK NOW</span>
+                        <span>RESERVER </span>
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                     </div>
                 </div>
+                <h1 className='headeTitle'>Bienveue chez Hotel</h1>
+                <p className='headerDesc'>Passez des moments agréables dans nos hotels situés dans tout Madagascar</p>
+                <button className="headerBtn">S'inscrire / Se connecter</button>
             </div>
         </div>
     )
