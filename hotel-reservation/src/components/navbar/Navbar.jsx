@@ -1,8 +1,17 @@
 import React from 'react'
+import './navbar.css';
 
 function Navbar() {
   return (
-    <div>Navbar</div>
+    <div className='navbar'>
+        <div className="navContainer">
+            <span className="logo">Hotel</span>
+            <div className="navItem">
+                <button className="navButton">Register</button>
+                <button className="navButton">Login</button>
+            </div>
+        </div>
+    </div>
   )
 }
 
