@@ -63,7 +63,7 @@ function Header() {
                         <FontAwesomeIcon icon={faCalendarDays} className='headerIcon' />
                         <span onClick={() => setOpenDate(!openDate)}
                             className='headerSearchText'>
-                            {`${format(date[0].startDate, "dd/MM/yyyy")} to ${format(date[0].endDate, "dd/MM/yyyy")}`}</span>
+                            {`${format(date[0].startDate, "dd/MM/yyyy")} à ${format(date[0].endDate, "dd/MM/yyyy")}`}</span>
                         {openDate && <DateRange
                             editableDateInputs={true}
                             onChange={item => setDate([item.selection])}
@@ -75,16 +75,17 @@ function Header() {
 
                     <div className="headerSearchItem">
                         <FontAwesomeIcon icon={faPerson} className='headerIcon' />
-                        <span className='headerSearchText'>{`${options.adult} adult | ${options.children} children | ${options.room} room`}</span>
+                        <span onClick={()=>setOpenOptions(!openOptions)} className='headerSearchText'>{`${options.adult} adult | ${options.children} children | ${options.room} room`}</span>
 
-                        <div className="options">
+                        {openOptions && <div className="options">
                             <div className="optionItem">
                                 <span className="optionText">Adult</span>
 
                                 <div className="optionCounter">
                                     <button className="optionCounterBtn"
+                                    disabled={options.adult <= 1}
                                     onClick={()=>handleOption("adult", "decrease")}>-</button>
-                                    <span className="countNumber">1</span>
+                                    <span className="countNumber">{options.adult}</span>
                                     <button className="optionCounterBtn" 
                                     onClick={()=>handleOption("adult", "increase")}>+</button>
                                 </div>
@@ -94,8 +95,9 @@ function Header() {
 
                                 <div className="optionCounter">
                                     <button className="optionCounterBtn"
+                                    disabled={options.children <= 0}
                                     onClick={()=>handleOption("children", "decrease")}>-</button>
-                                    <span className="countNumber">0</span>
+                                    <span className="countNumber">{options.children}</span>
                                     <button className="optionCounterBtn"
                                     onClick={()=>handleOption("children", "increase")}>+</button>
                                 </div>
@@ -105,13 +107,14 @@ function Header() {
 
                                 <div className="optionCounter">
                                     <button className="optionCounterBtn"
+                                    disabled={options.room <= 1}
                                     onClick={()=>handleOption("room", "decrease")}>-</button>
-                                    <span className="countNumber">1</span>
+                                    <span className="countNumber">{options.room}</span>
                                     <button className="optionCounterBtn"
                                     onClick={()=>handleOption("room", "increase")}>+</button>
                                 </div>
                             </div>
-                        </div>
+                        </div>}
                     </div>
 
                     <div className="headerSearchItem">

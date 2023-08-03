@@ -93,7 +93,7 @@ light gold: e4d58e
 
 .options {
     position: absolute;
-    top: 50px;
+    top: 60px;
     background-color: white;
     color: gray;
     box-shadow: 0.5px 0.5px 7px 1px #333333;
@@ -123,4 +123,8 @@ light gold: e4d58e
     border-radius: 5px;
     color: #333333;
     cursor: pointer;
+}
+
+.optionCounterBtn:disabled {
+    cursor: not-allowed;
 }
