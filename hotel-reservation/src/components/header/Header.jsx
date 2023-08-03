@@ -12,7 +12,8 @@ import { format } from 'date-fns';
 import './header.css';
 
 function Header() {
-    const [openDate, setOpenDate] = useState(false)
+
+    const [openDate, setOpenDate] = useState(false);
     const [date, setDate] = useState([
         {
             startDate: new Date(),
@@ -20,6 +21,14 @@ function Header() {
             key: 'selection'
         }
     ]);
+
+    const [openOptions, setOpenOptions] = useState(false);
+    const [options, setOptions] = useState({
+        adult: 1,
+        children: 0,
+        room: 1
+    })
+    
     return (
         <div className='header'>
             <div className="headerContainer">
@@ -33,12 +42,14 @@ function Header() {
                 <p className='headerDesc'>Passez des moments agréables dans nos hotels situés dans tout Madagascar</p>
                 <button className="headerBtn">S'inscrire / Se connecter</button>
                 <div className="headerSearch">
+
                     <div className="headerSearchItem">
                         <FontAwesomeIcon icon={faBed} className='headerIcon' />
                         <input type="text"
                             placeholder='Choisissez une destination'
                             className='headerSearchInput' />
                     </div>
+
                     <div className="headerSearchItem">
                         <FontAwesomeIcon icon={faCalendarDays} className='headerIcon' />
                         <span onClick={() => setOpenDate(!openDate)} 
@@ -52,10 +63,33 @@ function Header() {
                             className='date'
                         />}
                     </div>
+
                     <div className="headerSearchItem">
                         <FontAwesomeIcon icon={faPerson} className='headerIcon' />
-                        <span className='headerSearchText'>2 adults 2 children 1 room</span>
+                        <span className='headerSearchText'>{`${options.adult} adult | ${options.children} children | ${options.room} room`}</span>
+                        
+                        <div className="options">
+                            <div className="optionItem">
+                                <span className="optionText">Adult</span>
+                                <button className="optionCouterBtn">-</button>
+                                <span className="countNumber">1</span>
+                                <button className="optionCouterBtn">+</button>
+                            </div>
+                            <div className="optionItem">
+                                <span className="optionText">Children</span>
+                                <button className="optionCouterBtn">-</button>
+                                <span className="countNumber">0</span>
+                                <button className="optionCouterBtn">+</button>
+                            </div>
+                            <div className="optionItem">
+                                <span className="optionText">Room</span>
+                                <button className="optionCouterBtn">-</button>
+                                <span className="countNumber">1</span>
+                                <button className="optionCouterBtn">+</button>
+                            </div>
+                        </div>
                     </div>
+
                     <div className="headerSearchItem">
                         <button className="headerBtn">RECHERCHER</button>
                     </div>

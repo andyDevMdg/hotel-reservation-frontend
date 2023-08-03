@@ -80,7 +80,7 @@ light gold: e4d58e
 }
 
 .headerSearchText {
-    color: lightgray;
+    color: rgb(158, 158, 158);
     cursor: pointer;
 }
 
@@ -88,3 +88,4 @@ light gold: e4d58e
     position: absolute;
     top: 60px;
 }
+
