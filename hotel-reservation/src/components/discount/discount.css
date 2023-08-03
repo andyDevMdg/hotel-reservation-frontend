@@ -1,5 +1,33 @@
+.discount {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1;
+}
+
+.discountItem {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: red;
+    height: 250px;
+    color: white;
+}
+
 .discountImg {
-    width: 500px;
-    height: 500px;
+    width: 320px;
+    height: 320px;
     object-fit: cover;
+}
+
+.discountTitle {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border: solid #e4d58e 2px;
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.7);
+    border-radius: 5px;
 }
