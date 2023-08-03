@@ -28,7 +28,7 @@ function Header() {
         children: 0,
         room: 1
     })
-    
+
     return (
         <div className='header'>
             <div className="headerContainer">
@@ -52,8 +52,8 @@ function Header() {
 
                     <div className="headerSearchItem">
                         <FontAwesomeIcon icon={faCalendarDays} className='headerIcon' />
-                        <span onClick={() => setOpenDate(!openDate)} 
-                        className='headerSearchText'>
+                        <span onClick={() => setOpenDate(!openDate)}
+                            className='headerSearchText'>
                             {`${format(date[0].startDate, "dd/MM/yyyy")} to ${format(date[0].endDate, "dd/MM/yyyy")}`}</span>
                         {openDate && <DateRange
                             editableDateInputs={true}
@@ -67,25 +67,34 @@ function Header() {
                     <div className="headerSearchItem">
                         <FontAwesomeIcon icon={faPerson} className='headerIcon' />
                         <span className='headerSearchText'>{`${options.adult} adult | ${options.children} children | ${options.room} room`}</span>
-                        
+
                         <div className="options">
                             <div className="optionItem">
                                 <span className="optionText">Adult</span>
-                                <button className="optionCouterBtn">-</button>
-                                <span className="countNumber">1</span>
-                                <button className="optionCouterBtn">+</button>
+
+                                <div className="optionCounter">
+                                    <button className="optionCounterBtn">-</button>
+                                    <span className="countNumber">1</span>
+                                    <button className="optionCounterBtn">+</button>
+                                </div>
                             </div>
                             <div className="optionItem">
                                 <span className="optionText">Children</span>
-                                <button className="optionCouterBtn">-</button>
-                                <span className="countNumber">0</span>
-                                <button className="optionCouterBtn">+</button>
+
+                                <div className="optionCounter">
+                                    <button className="optionCounterBtn">-</button>
+                                    <span className="countNumber">0</span>
+                                    <button className="optionCounterBtn">+</button>
+                                </div>
                             </div>
                             <div className="optionItem">
                                 <span className="optionText">Room</span>
-                                <button className="optionCouterBtn">-</button>
-                                <span className="countNumber">1</span>
-                                <button className="optionCouterBtn">+</button>
+
+                                <div className="optionCounter">
+                                    <button className="optionCounterBtn">-</button>
+                                    <span className="countNumber">1</span>
+                                    <button className="optionCounterBtn">+</button>
+                                </div>
                             </div>
                         </div>
                     </div>
