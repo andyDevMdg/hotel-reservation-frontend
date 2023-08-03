@@ -29,6 +29,15 @@ function Header() {
         room: 1
     })
 
+    const handleOption = (name, operation) => {
+        setOptions((prev) => {
+            return {
+                ...prev,
+                [name]: operation === "increase" ? options[name] + 1 : options[name] - 1,
+            };
+        });
+    };
+    
     return (
         <div className='header'>
             <div className="headerContainer">
@@ -73,27 +82,33 @@ function Header() {
                                 <span className="optionText">Adult</span>
 
                                 <div className="optionCounter">
-                                    <button className="optionCounterBtn">-</button>
+                                    <button className="optionCounterBtn"
+                                    onClick={()=>handleOption("adult", "decrease")}>-</button>
                                     <span className="countNumber">1</span>
-                                    <button className="optionCounterBtn">+</button>
+                                    <button className="optionCounterBtn" 
+                                    onClick={()=>handleOption("adult", "increase")}>+</button>
                                 </div>
                             </div>
                             <div className="optionItem">
                                 <span className="optionText">Children</span>
 
                                 <div className="optionCounter">
-                                    <button className="optionCounterBtn">-</button>
+                                    <button className="optionCounterBtn"
+                                    onClick={()=>handleOption("children", "decrease")}>-</button>
                                     <span className="countNumber">0</span>
-                                    <button className="optionCounterBtn">+</button>
+                                    <button className="optionCounterBtn"
+                                    onClick={()=>handleOption("children", "increase")}>+</button>
                                 </div>
                             </div>
                             <div className="optionItem">
                                 <span className="optionText">Room</span>
 
                                 <div className="optionCounter">
-                                    <button className="optionCounterBtn">-</button>
+                                    <button className="optionCounterBtn"
+                                    onClick={()=>handleOption("room", "decrease")}>-</button>
                                     <span className="countNumber">1</span>
-                                    <button className="optionCounterBtn">+</button>
+                                    <button className="optionCounterBtn"
+                                    onClick={()=>handleOption("room", "increase")}>+</button>
                                 </div>
                             </div>
                         </div>
