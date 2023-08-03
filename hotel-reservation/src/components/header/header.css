@@ -17,6 +17,10 @@ light gold: e4d58e
     margin: 20px 0px 100px 0px;
 }
 
+.headerContainer.listMode{
+    margin: 20px 0px 0px 0px;
+}
+
 .headerListItem{
     border: solid white 2px;
     padding: 11px 20px;

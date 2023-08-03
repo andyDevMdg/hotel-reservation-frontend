@@ -11,7 +11,7 @@ import { useState } from 'react';
 import { format } from 'date-fns';
 import './header.css';
 
-function Header() {
+function Header({type}) {
 
     const [openDate, setOpenDate] = useState(false);
     const [date, setDate] = useState([
@@ -40,14 +40,16 @@ function Header() {
     
     return (
         <div className='header'>
-            <div className="headerContainer">
+            <div className={type === "list" ? "headerContainer listMode" : "headerContainer"}>
                 <div className="headerList">
                     <div className="headerListItem">
                         <span>RESERVER </span>
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                     </div>
                 </div>
-                <h1 className='headeTitle'>Bienveue chez Hotel</h1>
+                { type !== "list" &&
+                    <>
+                    <h1 className='headeTitle'>Bienveue chez Hotel</h1>
                 <p className='headerDesc'>Passez des moments agréables dans nos hotels situés dans tout Madagascar</p>
                 <button className="headerBtn">S'inscrire / Se connecter</button>
                 <div className="headerSearch">
@@ -120,7 +122,7 @@ function Header() {
                     <div className="headerSearchItem">
                         <button className="headerBtn">RECHERCHER</button>
                     </div>
-                </div>
+                </div></>}
             </div>
         </div>
     )
