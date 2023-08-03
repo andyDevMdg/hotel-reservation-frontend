@@ -17,6 +17,26 @@ function BestRoom() {
                     <span>Excellent</span>
                 </div>
             </div>
+            <div className="bestRoomItem">
+                <img src={family} alt="" className="bestRoom" />
+                <span className="bestRoomName"></span>
+                <span className="bestRoomCity"></span>
+                <span className="bestRoomPrice">A partir de 90.000ar</span>
+                <div className="bestRoomRating">
+                    <button>4.5</button>
+                    <span>Excellent</span>
+                </div>
+            </div>
+            <div className="bestRoomItem">
+                <img src={suite} alt="" className="bestRoom" />
+                <span className="bestRoomName"></span>
+                <span className="bestRoomCity"></span>
+                <span className="bestRoomPrice">A partir de 150.000ar</span>
+                <div className="bestRoomRating">
+                    <button>4.5</button>
+                    <span>Excellent</span>
+                </div>
+            </div>
         </div>
     )
 }
