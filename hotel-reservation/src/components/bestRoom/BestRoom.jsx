@@ -11,7 +11,7 @@ function BestRoom() {
                 <img src={twin} alt="" className="bestRoomImg" />
                 <span className="bestRoomName">Chambre Twin</span>
                 <span className="bestRoomCity">Toamasina</span>
-                <span className="bestRoomPrice">A partir de 40.000ar</span>
+                <span className="bestRoomPrice">à partir de 40.000ar</span>
                 <div className="bestRoomRating">
                     <button>4.5</button>
                     <span>Excellent</span>
@@ -21,7 +21,7 @@ function BestRoom() {
                 <img src={family} alt="" className="bestRoomImg" />
                 <span className="bestRoomName">Chambre Familiale</span>
                 <span className="bestRoomCity">Majunga</span>
-                <span className="bestRoomPrice">A partir de 90.000ar</span>
+                <span className="bestRoomPrice">à partir de 90.000ar</span>
                 <div className="bestRoomRating">
                     <button>4.5</button>
                     <span>Excellent</span>
@@ -31,7 +31,7 @@ function BestRoom() {
                 <img src={suite} alt="" className="bestRoomImg" />
                 <span className="bestRoomName">Suite</span>
                 <span className="bestRoomCity">Nosy Be</span>
-                <span className="bestRoomPrice">A partir de 150.000ar</span>
+                <span className="bestRoomPrice">à partir de 150.000ar</span>
                 <div className="bestRoomRating">
                     <button>4.5</button>
                     <span>Excellent</span>

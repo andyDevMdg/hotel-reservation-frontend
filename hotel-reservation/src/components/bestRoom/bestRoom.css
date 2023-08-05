@@ -20,3 +20,34 @@
     height: 300px;
     object-fit: cover;
 }
+
+.bestRoomName {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bestRoomCity {
+    color: rgb(134, 134, 134);
+}
+
+.bestRoomPrice {
+font-weight: 700;
+font-size: 16px;
+letter-spacing: 0.01em;
+}
+
+.bestRoomRating>button {
+ background-color: #333333;
+ color: white;
+ font-weight: 700;
+ border: solid #333333 1px;
+ border-radius: 5px;
+ padding: 2px 4px;
+ font-size: 14px;
+}
+
+.bestRoomRating>span {
+    margin-left: 10px;
+    letter-spacing: 0.01em;
+    font-size: 15px;
+   }
