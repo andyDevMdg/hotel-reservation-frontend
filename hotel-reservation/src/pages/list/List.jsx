@@ -12,6 +12,7 @@ function List() {
   const location = useLocation()
   const [destination, setDestination] = useState(location.state.destination)
   const [date, setDate] = useState(location.state.date)
+  const [openDate, setOpenDate] = useState(false)
   const [options, setOptions] = useState(location.state.options)
 
   return (
@@ -28,15 +29,50 @@ function List() {
             </div>
             <div className="listItem">
               <label>Dates selectionnées</label>
-              <span>{`${format(date[0].startDate, "dd/MM/yyyy")} à ${format(date[0].endDate, "dd/MM/yyyy")}`}</span>
-              <DateRange 
-              onChange={(item) => setDate([item.selection])} 
-              minDate={new Date()} 
-              ranges={date}
-              />
+              <span onClick={() => setOpenDate(!openDate)}>{`${format(date[0].startDate, "dd/MM/yyyy")} à ${format(date[0].endDate, "dd/MM/yyyy")}`}</span>
+              {openDate && (<DateRange
+                onChange={(item) => setDate([item.selection])}
+                minDate={new Date()}
+                ranges={date}
+              />)}
             </div>
-            <div className="listResult"></div>
+            <div className="listItem">
+              <label>Spécificités</label>
+              <div className="listSpec">
+                <span className="specText">
+                  Prix min 
+                  <small> /nuitée</small>
+                </span>
+                <input type="number" className='specInput' />
+              </div>
+              <div className="listSpec">
+                <span className="specText">
+                  Prix max 
+                  <small> /nuitée</small>
+                </span>
+                <input type="number" className='specInput' />
+              </div>
+              <div className="listSpec">
+                <span className="specText">
+                  Adulte(s)
+                </span>
+                <input type="number" min={1} className='specInput' placeholder={options.adult}/>
+              </div>
+              <div className="listSpec">
+                <span className="specText">
+                  Enfant(s)
+                </span>
+                <input type="number" min={0} className='specInput' placeholder={options.children}/>
+              </div>
+              <div className="listSpec">
+                <span className="specText">
+                  Chambre(s)
+                </span>
+                <input type="number" min={1} className='specInput' placeholder={options.room}/>
+              </div>
+            </div>
           </div>
+          <div className="listResult"></div>
         </div>
       </div>
     </div>

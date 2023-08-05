@@ -87,11 +87,11 @@ function Header({type}) {
 
                     <div className="headerSearchItem">
                         <FontAwesomeIcon icon={faPerson} className='headerIcon' />
-                        <span onClick={()=>setOpenOptions(!openOptions)} className='headerSearchText'>{`${options.adult} adult | ${options.children} children | ${options.room} room`}</span>
+                        <span onClick={()=>setOpenOptions(!openOptions)} className='headerSearchText'>{`${options.adult} adulte(s) | ${options.children} enfant(s) | ${options.room} chambre(s)`}</span>
 
                         {openOptions && <div className="options">
                             <div className="optionItem">
-                                <span className="optionText">Adult</span>
+                                <span className="optionText">Adultes</span>
 
                                 <div className="optionCounter">
                                     <button className="optionCounterBtn"
@@ -103,7 +103,7 @@ function Header({type}) {
                                 </div>
                             </div>
                             <div className="optionItem">
-                                <span className="optionText">Children</span>
+                                <span className="optionText">Enfant</span>
 
                                 <div className="optionCounter">
                                     <button className="optionCounterBtn"
@@ -115,7 +115,7 @@ function Header({type}) {
                                 </div>
                             </div>
                             <div className="optionItem">
-                                <span className="optionText">Room</span>
+                                <span className="optionText">Chambre</span>
 
                                 <div className="optionCounter">
                                     <button className="optionCounterBtn"
