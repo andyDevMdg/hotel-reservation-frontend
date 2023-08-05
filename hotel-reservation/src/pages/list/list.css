@@ -12,7 +12,6 @@
 }
 
 .listSearch {
-    flex: 1;
     background-color: #e4d58e;
     padding: 10px;
     border-radius: 10px;
@@ -27,5 +26,30 @@
 .listSearchTitle {
     font-size: 20px;
     color: #555555;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     margin-bottom: 10px;
+}
+
+.listItem>label {
+    font-size: 12px;
+}
+
+.listItem>span {
+    height: 30px;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.listItem>input {
+    height: 30px;
+    border: none;
+    padding: 5px;
 }
