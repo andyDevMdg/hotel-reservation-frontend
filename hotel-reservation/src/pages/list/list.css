@@ -53,3 +53,29 @@
     border: none;
     padding: 5px;
 }
+
+.listSpec {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555555;
+    font-size: 12px;
+}
+
+.specInput {
+    width: 50px;
+}
+
+.listSpecContainer {
+    padding: 10px;
+}
+
+.listSearch>button {
+    padding: 10px;
+    background-color: #333333;
+    color: white;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+}

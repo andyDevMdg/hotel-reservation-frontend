@@ -38,39 +38,42 @@ function List() {
             </div>
             <div className="listItem">
               <label>Spécificités</label>
-              <div className="listSpec">
-                <span className="specText">
-                  Prix min 
-                  <small> /nuitée</small>
-                </span>
-                <input type="number" className='specInput' />
-              </div>
-              <div className="listSpec">
-                <span className="specText">
-                  Prix max 
-                  <small> /nuitée</small>
-                </span>
-                <input type="number" className='specInput' />
-              </div>
-              <div className="listSpec">
-                <span className="specText">
-                  Adulte(s)
-                </span>
-                <input type="number" min={1} className='specInput' placeholder={options.adult}/>
-              </div>
-              <div className="listSpec">
-                <span className="specText">
-                  Enfant(s)
-                </span>
-                <input type="number" min={0} className='specInput' placeholder={options.children}/>
-              </div>
-              <div className="listSpec">
-                <span className="specText">
-                  Chambre(s)
-                </span>
-                <input type="number" min={1} className='specInput' placeholder={options.room}/>
+              <div className="listSpecContainer">
+                <div className="listSpec">
+                  <span className="specText">
+                    Prix min
+                    <small> /nuitée</small>
+                  </span>
+                  <input type="number" className='specInput' />
+                </div>
+                <div className="listSpec">
+                  <span className="specText">
+                    Prix max
+                    <small> /nuitée</small>
+                  </span>
+                  <input type="number" className='specInput' />
+                </div>
+                <div className="listSpec">
+                  <span className="specText">
+                    Adulte(s)
+                  </span>
+                  <input type="number" min={1} className='specInput' placeholder={options.adult} />
+                </div>
+                <div className="listSpec">
+                  <span className="specText">
+                    Enfant(s)
+                  </span>
+                  <input type="number" min={0} className='specInput' placeholder={options.children} />
+                </div>
+                <div className="listSpec">
+                  <span className="specText">
+                    Chambre(s)
+                  </span>
+                  <input type="number" min={1} className='specInput' placeholder={options.room} />
+                </div>
               </div>
             </div>
+            <button>Rechrecher</button>
           </div>
           <div className="listResult"></div>
         </div>
