@@ -55,6 +55,7 @@ function Hotel() {
           </div>
           <div className="hotelDetails">
             <div className="hotelDetailsTexts">
+            <h1 className="hotelTitle">Stay in the heart of City</h1>
               <p className="hotelDesc">
                 Located a 5-minute walk from St. Florian's Gate in Krakow, Tower
                 Street Apartments has accommodations with air conditioning and
