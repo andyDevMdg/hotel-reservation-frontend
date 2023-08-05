@@ -80,7 +80,8 @@ function Header({type}) {
                             onChange={item => setDate([item.selection])}
                             moveRangeOnFirstSelection={false}
                             ranges={date}
-                            className='date'
+                            className='date' 
+                            minDate={new Date()}
                         />}
                     </div>
 
