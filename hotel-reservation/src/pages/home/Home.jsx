@@ -5,6 +5,8 @@ import Header from '../../components/header/Header';
 import Discount from '../../components/discount/Discount';
 import CityList from '../../components/cityList/CityList';
 import BestRoom from '../../components/bestRoom/BestRoom';
+import MailList from '../../components/mailList/MailList';
+import Footer from '../../components/footer/Footer';
 
 function Home() {
   return (
@@ -17,6 +19,8 @@ function Home() {
         <CityList/>
         <h1 className="homeTitle">Nos meilleurs chambres</h1>
         <BestRoom/>
+        <MailList/>
+        <Footer/>
       </div>
       </div>
   )
