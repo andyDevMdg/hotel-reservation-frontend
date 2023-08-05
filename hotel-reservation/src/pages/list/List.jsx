@@ -11,10 +11,12 @@ import SearchedItem from '../../components/searchedItem/SearchedItem';
 function List() {
 
   const location = useLocation()
-  const [destination, setDestination] = useState(location.state.destination)
-  const [date, setDate] = useState(location.state.date)
+  const [destination, setDestination] = useState(location.state?.destination || '')
+  const [date, setDate] = useState(location.state?.date  || [{
+        startDate: new Date(),
+        endDate: new Date() }])
   const [openDate, setOpenDate] = useState(false)
-  const [options, setOptions] = useState(location.state.options)
+  const [options, setOptions] = useState(location.state?.options || '')
 
   return (
     <div>
@@ -77,7 +79,6 @@ function List() {
             <button>Rechrecher</button>
           </div>
           <div className="listResult">
-            <SearchedItem/>
             <SearchedItem/>
             <SearchedItem/>
             <SearchedItem/>

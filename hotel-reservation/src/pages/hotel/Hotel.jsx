@@ -34,6 +34,7 @@ function Hotel() {
       <Header type="list" />
       <div className="hotelContainer">
         <div className="hotelWrapper">
+          <button className='bookNow'>RESERVER MAINENANT</button>
           <h1 className="hotelTitle">Grand Hotel</h1>
           <div className="hotelAddress">
             <FontAwesomeIcon icon={faLocationDot} />
@@ -68,7 +69,17 @@ function Hotel() {
                 airport shuttle service.
               </p>
             </div>
-            <div className="hotelDetailsPrice"></div>
+            <div className="hotelDetailsPrice">
+            <h1>Perfect for a 9-night stay!</h1>
+              <span>
+                Located in the real heart of Krakow, this property has an
+                excellent location score of 9.8!
+              </span>
+              <h2>
+                <b>$945</b> (9 nights)
+              </h2>
+              <button>Reserve or Book Now!</button>
+            </div>
           </div>
         </div>
       </div>
