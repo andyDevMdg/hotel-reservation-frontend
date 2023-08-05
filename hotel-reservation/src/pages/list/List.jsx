@@ -78,6 +78,14 @@ function List() {
           </div>
           <div className="listResult">
             <SearchedItem/>
+            <SearchedItem/>
+            <SearchedItem/>
+            <SearchedItem/>
+            <SearchedItem/>
+            <SearchedItem/>
+            <SearchedItem/>
+            <SearchedItem/>
+            <SearchedItem/>
           </div>
         </div>
       </div>
