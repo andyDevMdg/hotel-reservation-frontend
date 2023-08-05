@@ -5,6 +5,7 @@ import './list.css';
 import { format } from 'date-fns';
 import { useLocation } from 'react-router';
 import { DateRange } from 'react-date-range';
+import SearchedItem from '../../components/searchedItem/SearchedItem';
 
 
 function List() {
@@ -75,7 +76,9 @@ function List() {
             </div>
             <button>Rechrecher</button>
           </div>
-          <div className="listResult"></div>
+          <div className="listResult">
+            <SearchedItem/>
+          </div>
         </div>
       </div>
     </div>
