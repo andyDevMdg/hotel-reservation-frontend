@@ -1,13 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './hotel.css'
 import Navbar from '../../components/navbar/Navbar'
 import Header from '../../components/header/Header'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faAnglesLeft, faAnglesRight, faCircleXmark, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import MailList from '../../components/mailList/MailList'
 import Footer from '../../components/footer/Footer'
 
 function Hotel() {
+
+  const [slideNumber, setSlideNumber] = useState(0);
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = (i) => {
+    setSlideNumber(i);
+    setOpen(true);
+  };
+
+  const handleMove = (direction) => {
+    let newSlideNumber;
+
+    if (direction === "left") {
+      newSlideNumber = slideNumber === 0 ? 5 : slideNumber - 1;
+    } else {
+      newSlideNumber = slideNumber === 5 ? 0 : slideNumber + 1;
+    }
+
+    setSlideNumber(newSlideNumber)
+  };
 
   const photos = [
     {
@@ -35,6 +55,19 @@ function Hotel() {
       <Navbar />
       <Header type="list" />
       <div className="hotelContainer">
+        {open && <div className="slider">
+          <FontAwesomeIcon icon={faCircleXmark} className="close" onClick={()=>setOpen(false)}/>
+          <FontAwesomeIcon icon={faAnglesLeft} 
+          className="arrow" 
+          onClick={()=>handleMove("left")}/>
+          <div className="sliderWrapper">
+            <img src={photos[slideNumber].src} alt="" className="sliderimg" />
+          </div>
+
+          <FontAwesomeIcon icon={faAnglesRight} 
+          className="arrow" 
+          onClick={()=>handleMove("right")}/>
+          </div>}
         <div className="hotelWrapper">
           <button className='bookNow'>RESERVER MAINENANT</button>
           <h1 className="hotelTitle">Grand Hotel</h1>
@@ -49,15 +82,15 @@ function Hotel() {
             Book a stay over $114 at this property and get a free airport taxi
           </span>
           <div className="hotelImgContainer">
-            {photos.map(photo => (
+            {photos.map((photo,i) => (
               <div className='hotelImgWrapper'>
-                <img src={photo.src} alt="" className="hotelImg" />
+                <img onClick={() =>handleOpen(i)} src={photo.src} alt="" className="hotelImg" />
               </div>
             ))}
           </div>
           <div className="hotelDetails">
             <div className="hotelDetailsTexts">
-            <h1 className="hotelTitle">Stay in the heart of City</h1>
+              <h1 className="hotelTitle">Stay in the heart of City</h1>
               <p className="hotelDesc">
                 Located a 5-minute walk from St. Florian's Gate in Krakow, Tower
                 Street Apartments has accommodations with air conditioning and
@@ -73,7 +106,7 @@ function Hotel() {
               </p>
             </div>
             <div className="hotelDetailsPrice">
-            <h1>Perfect for a 9-night stay!</h1>
+              <h1>Perfect for a 9-night stay!</h1>
               <span>
                 Located in the real heart of Krakow, this property has an
                 excellent location score of 9.8!
@@ -85,8 +118,8 @@ function Hotel() {
             </div>
           </div>
         </div>
-        <MailList/>
-        <Footer/>
+        <MailList />
+        <Footer />
       </div>
     </div>
   )
