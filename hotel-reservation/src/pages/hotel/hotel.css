@@ -26,6 +26,9 @@
 
 .hotelTitle {
     font-size: 24px;
+    padding: 10px;
+    border-bottom: #555555 solid 3px;
+    letter-spacing: 0.02em;
 }
 
 .hotelAddress {
@@ -40,12 +43,11 @@
     font-weight: 500;
 }
 
-.hotelPriceHighlight {
-    color: #008009;
-    font-weight: 500;
-}
-
 .hotelImgContainer {
+    margin-top: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -87,6 +89,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-radius: 5px;
 }
 
 .hotelDetailsPrice>h1 {
@@ -103,14 +106,24 @@
 }
 
 .hotelDetailsPrice>button {
-    border: none;
-    padding: 10px 20px;
-    background-color: #0071c2;
+    background-color: #555555;
     color: white;
-    font-weight: bold;
-    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px 50px;
+    border: none;
     cursor: pointer;
+    transition: all .2s;
+    width: max-content;
 }
+
+
+.hotelDetailsPrice>button:hover {
+    background-color: lightgray;
+    color: black;
+    transform: translateY(-1px);
+    box-shadow: 1px 1px 5px 1px gray;
+}
+
 
 .slider {
     position: sticky;

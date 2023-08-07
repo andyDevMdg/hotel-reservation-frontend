@@ -33,22 +33,22 @@ function Hotel() {
 
   const photos = [
     {
-      src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261707778.jpg?k=56ba0babbcbbfeb3d3e911728831dcbc390ed2cb16c51d88159f82bf751d04c6&o=&hp=1",
+      src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/188089699.jpg?k=0aee97b2092bc72648b0b70523626b92bf15b2d4fcdd0fa9d5a889806cf296cb&o=&hp=1",
     },
     {
-      src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261707367.jpg?k=cbacfdeb8404af56a1a94812575d96f6b80f6740fd491d02c6fc3912a16d8757&o=&hp=1",
+      src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/188063162.jpg?k=afcea0bf69e8a9414b6318d7711e6c111f88377e51196ea3a288ad1e5872ae9b&o=&hp=1",
     },
     {
-      src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261708745.jpg?k=1aae4678d645c63e0d90cdae8127b15f1e3232d4739bdf387a6578dc3b14bdfd&o=&hp=1",
+      src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/188059200.jpg?k=5c692e753446c27ebc7179db93a4362a11d1763fecb859380a09f524dbd58db1&o=&hp=1",
     },
     {
-      src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261707776.jpg?k=054bb3e27c9e58d3bb1110349eb5e6e24dacd53fbb0316b9e2519b2bf3c520ae&o=&hp=1",
+      src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/188089323.jpg?k=4ac832cf7aab6f671a1ce67e09e3ad72457e5d24f594c905e476fb0e93106ef2&o=&hp=1",
     },
     {
-      src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261708693.jpg?k=ea210b4fa329fe302eab55dd9818c0571afba2abd2225ca3a36457f9afa74e94&o=&hp=1",
+      src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/188089220.jpg?k=c0870f9b957fa39e0f096471b712dee64044ec2de49b00b9f2851bbb608330b0&o=&hp=1",
     },
     {
-      src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261707389.jpg?k=52156673f9eb6d5d99d3eed9386491a0465ce6f3b995f005ac71abc192dd5827&o=&hp=1",
+      src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/192998511.jpg?k=17dad3e70bc54b0a88455af23c11679e20a738ec30269c78446eed4b77a6c1a5&o=&hp=1",
     },
   ];
 
@@ -61,6 +61,7 @@ function Hotel() {
     <div>
       <Navbar />
       <div className="hotelContainer">
+
         {open && <div className="slider">
           <FontAwesomeIcon icon={faCircleXmark} className="close" onClick={() => setOpen(false)} />
           <FontAwesomeIcon icon={faAnglesLeft}
@@ -74,18 +75,10 @@ function Hotel() {
             className="arrow"
             onClick={() => handleMove("right")} />
         </div>}
+
+
         <div className="hotelWrapper">
-          <h1 className="hotelTitle">Grand Hotel</h1>
-          <div className="hotelAddress">
-            <FontAwesomeIcon icon={faLocationDot} />
-            <span>Elton St 125 New York</span>
-          </div>
-          <span className="hotelDistance">
-            Excellent location – 500m from center
-          </span>
-          <span className="hotelPriceHighlight">
-            Book a stay over $114 at this property and get a free airport taxi
-          </span>
+          <h1 className="hotelTitle">Grand Hotel-Fianarantsoa</h1>
           <div className="hotelImgContainer">
             {photos.map((photo, i) => (
               <div className='hotelImgWrapper'>
@@ -95,36 +88,29 @@ function Hotel() {
           </div>
           <div className="hotelDetails">
             <div className="hotelDetailsTexts">
-              <h1 className="hotelTitle">Stay in the heart of City</h1>
+              <h1 className="hotelTitle">Lieu paisible et chaleureux</h1>
               <p className="hotelDesc">
-                Located a 5-minute walk from St. Florian's Gate in Krakow, Tower
-                Street Apartments has accommodations with air conditioning and
-                free WiFi. The units come with hardwood floors and feature a
-                fully equipped kitchenette with a microwave, a flat-screen TV,
-                and a private bathroom with shower and a hairdryer. A fridge is
-                also offered, as well as an electric tea pot and a coffee
-                machine. Popular points of interest near the apartment include
-                Cloth Hall, Main Market Square and Town Hall Tower. The nearest
-                airport is John Paul II International Kraków–Balice, 16.1 km
-                from Tower Street Apartments, and the property offers a paid
-                airport shuttle service.
+              Situé à 5 minutes du centre de ville de Fianarantsoa, 
+              le Grand Hotel - Fianarantsoa propose des chambres climatisés dotées 
+              d'une connexion WiFi, d'une télévision à écran plat et 
+              d'une salle de bains privative avec une douche. 
+              Vous aurez accès à une piscine et un bar. 
+              L'hotel propose un service de transport payant si vous souhaiter vous déplacer dans la ville.
               </p>
             </div>
             <div className="hotelDetailsPrice">
-              <h1>Perfect for a 9-night stay!</h1>
+              <h1>Parfait pour vos passages à Fianarantsoa</h1>
               <span>
-                Located in the real heart of Krakow, this property has an
-                excellent location score of 9.8!
+                Situé au coeur de la ville, l'hotel a un excellent avis de 4.8
               </span>
               <h2>
-                <b>$945</b> (9 nights)
+                <b>à partir de 40.000ar</b> (nuitée)
               </h2>
-              <button onClick={handleClick}>Reserver</button>
+              <button onClick={handleClick}>RESERVER</button>
             </div>
           </div>
         </div>
         <MailList />
-        <Footer />
       </div>
     </div>
   )

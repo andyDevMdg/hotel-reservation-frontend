@@ -22,7 +22,7 @@
 
 .mailInputContainer>button {
   margin-left: 10px;
-  border: solid #333333 1px;
+  border: none;
   padding: 11px 20px;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -33,7 +33,10 @@
 }
 
 .mailInputContainer>button:hover{
-  transform: translateY(-2px);
+  background-color: lightgray;
+  color: black;
+  transform: translateY(-1px);
+  box-shadow: 1px 1px 5px 1px rgb(0, 0, 0);
 }
 
 .mailInputContainer>button:active{
