@@ -49,6 +49,22 @@
     padding: 0px 10px;
 }
 
+.roomTypeCheckContainer {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.roomTypeCheck {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.roomTypeCheck>p {
+    font-size: 14px;
+}
+
 .listItem>span {
     height: 40px;
     background-color: #555555;

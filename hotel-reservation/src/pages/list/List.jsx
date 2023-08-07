@@ -12,9 +12,10 @@ function List() {
 
   const location = useLocation()
   const [destination, setDestination] = useState(location.state?.destination || '')
-  const [date, setDate] = useState(location.state?.date  || [{
-        startDate: new Date(),
-        endDate: new Date() }])
+  const [date, setDate] = useState(location.state?.date || [{
+    startDate: new Date(),
+    endDate: new Date()
+  }])
   const [openDate, setOpenDate] = useState(false)
   const [options, setOptions] = useState(location.state?.options || '')
 
@@ -30,8 +31,25 @@ function List() {
               <input type="text" placeholder={destination} />
             </div>
             <div className="listItem">
-              <label>Type de chambre :</label>
-              <input type="text" placeholder={destination} />
+                <label>Type de chambre :</label>
+              <div className="roomTypeCheckContainer">
+                <div className='roomTypeCheck'>
+                  <p>Chambre Simple </p>
+                  <input type="checkbox" />
+                </div>
+                <div className='roomTypeCheck'>
+                  <p>Chambre Twin </p>
+                  <input type="checkbox" />
+                </div>
+                <div className='roomTypeCheck'>
+                  <p>Chambre Familliale </p>
+                  <input type="checkbox" />
+                </div>
+                <div className='roomTypeCheck'>
+                  <p>Suite / VIP </p>
+                  <input type="checkbox" />
+                </div>
+              </div>
             </div>
             <div className="listItem">
               <label>Dates selectionnées :</label>
@@ -49,13 +67,13 @@ function List() {
                   <span className="specText">
                     Prix min /nuitée
                   </span>
-                  <input type="number" min={30000} className='specInput' placeholder='40000' step={1000}/>
+                  <input type="number" min={30000} className='specInput' placeholder='40000' step={1000} />
                 </div>
                 <div className="listSpec">
                   <span className="specText">
                     Prix max /nuitée
                   </span>
-                  <input type="number" min={30000} className='specInput' placeholder='40000' step={1000}/>
+                  <input type="number" min={30000} className='specInput' placeholder='40000' step={1000} />
                 </div>
                 <div className="listSpec">
                   <span className="specText">
@@ -80,14 +98,14 @@ function List() {
             <button>RECHERCHER</button>
           </div>
           <div className="listResult">
-            <SearchedItem/>
-            <SearchedItem/>
-            <SearchedItem/>
-            <SearchedItem/>
-            <SearchedItem/>
-            <SearchedItem/>
-            <SearchedItem/>
-            <SearchedItem/>
+            <SearchedItem />
+            <SearchedItem />
+            <SearchedItem />
+            <SearchedItem />
+            <SearchedItem />
+            <SearchedItem />
+            <SearchedItem />
+            <SearchedItem />
           </div>
         </div>
       </div>
