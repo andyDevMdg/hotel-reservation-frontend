@@ -9,18 +9,18 @@
 
 .loginBody {
     width: 50%;
-    height: 80%;
+    height: max-content;
     background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: 2px 2px 8px 1px rgba(143, 143, 143, 0.562);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px 40px 80px 40px;
 }
 
 .loginInputContainer {
-    border-top: 2px solid #838383;
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,18 +29,19 @@
 
 .loginInputContainer>h2 {
     margin-top: 20px;
+    letter-spacing: 0.01em;
 }
 
 .hotelName {
     background-color: #242424;
-    margin: 20px;
     height: max-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 50px;
-    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
     box-shadow: 2px 2px 8px 2px gray;
+    border-radius: 5px;
 }
 
 .hotelName>h1 {
@@ -63,28 +64,59 @@
     height: 60px;
     border-radius: 10px;
     padding: 20px;
+    font-size: 16px;
+    color: #141414;
+}
+
+.forgotPass {
+    color: #838383;
+    text-decoration: none;
+    margin-top: 20px;
 }
 
 .separator{
+    margin-top: 20px;
     width: 100%;
     position: relative;
     text-align: center;
+    color: #636363;
 }
 
 .separator::before {
     content: "";
     height: 2px;
-    width: 100px;
+    width: 45%;
     background: #636363;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 50%;
 }
 
 .separator::after {
     content: "";
     height: 2px;
-    width: 100px;
+    width: 45%;
     background: #636363;
-    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.loginBtn {
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.loginBtn:hover {
+    background-color: lightgray;
+    color: black;
+    transform: translateY(-1px);
+    box-shadow: 1px 1px 5px 1px gray;
 }

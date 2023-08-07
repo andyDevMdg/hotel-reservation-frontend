@@ -17,10 +17,10 @@ function Login() {
               <input type="email" placeholder='E-mail' className='inputTag' />
               <input type="password" className='inputTag' placeholder='Mot de passe' />
             </div>
-            <a href=""> Mot de passe oublié ?</a>
-            <button>Se connecter</button>
+            <a href="" className='forgotPass'> Mot de passe oublié ?</a>
+            <button className='loginBtn'>Se connecter</button>
             <p className='separator'>ou</p>
-            <button>S'inscrire</button>
+            <button className='loginBtn'>S'inscrire</button>
           </div>
 
         </div>
