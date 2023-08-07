@@ -20,7 +20,7 @@ function Login() {
               <input type="password" className='inputTag' placeholder='Mot de passe' />
             </div>
             <a href="" className='forgotPass'> Mot de passe oublié ?</a>
-            <button className='loginBtn' onClick={() => navigate("/")}>Se connecter</button>
+            <button className='loginBtn' onClick={() => navigate("/hotels")}>Se connecter</button>
             <p className='separator'>ou</p>
             <button className='loginBtn' onClick={() => navigate("/register")}>S'inscrire</button>
           </div>

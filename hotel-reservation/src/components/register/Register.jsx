@@ -1,7 +1,9 @@
 import React from 'react'
 import './register.css'
+import { useNavigate } from 'react-router'
 
 function Register() {
+  const navigate = useNavigate()
   return (
     <div>
       <div className="formBackground">
@@ -63,7 +65,7 @@ function Register() {
             </form>
             <p className='info'>*Veuillez vous assurez que vos informations personnelles soit correctes</p>
             <div className="btnContainer">
-            <button className='formBtn'>S'inscrire</button>
+            <button className='formBtn' onClick={() => navigate("/")}>S'inscrire</button>
             </div>
           </div>
 
