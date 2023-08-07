@@ -3,11 +3,14 @@ import './bestRoom.css';
 import twin from '../../img/twinPromotion.jpg';
 import family from '../../img/familyPromotion.jpg';
 import suite from '../../img/suitePromotion.jpg';
+import { useNavigate } from 'react-router';
 
 function BestRoom() {
+    const navigate = useNavigate()
+
     return (
         <div className='bestRoom'>
-            <div className="bestRoomItem">
+            <div className="bestRoomItem" onClick={() => navigate("/hotels")}>
                 <img src={twin} alt="" className="bestRoomImg" />
                 <span className="bestRoomName">Chambre Twin</span>
                 <span className="bestRoomCity">Toamasina</span>
@@ -17,7 +20,7 @@ function BestRoom() {
                     <span>Excellent</span>
                 </div>
             </div>
-            <div className="bestRoomItem">
+            <div className="bestRoomItem" onClick={() => navigate("/hotels")}>
                 <img src={family} alt="" className="bestRoomImg" />
                 <span className="bestRoomName">Chambre Familiale</span>
                 <span className="bestRoomCity">Majunga</span>
@@ -27,7 +30,7 @@ function BestRoom() {
                     <span>Excellent</span>
                 </div>
             </div>
-            <div className="bestRoomItem">
+            <div className="bestRoomItem" onClick={() => navigate("/hotels")}>
                 <img src={suite} alt="" className="bestRoomImg" />
                 <span className="bestRoomName">Suite</span>
                 <span className="bestRoomCity">Nosy Be</span>
