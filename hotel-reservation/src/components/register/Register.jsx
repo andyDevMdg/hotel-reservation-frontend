@@ -63,7 +63,7 @@ function Register() {
                 <input type="text" className='formInputTag' />
               </div>
             </form>
-            <p className='info'>*Veuillez vous assurez que vos informations personnelles soit correctes</p>
+            <p className='info'>*Veuillez vous assurez que vos informations personnelles sont correctes</p>
             <div className="btnContainer">
             <button className='formBtn' onClick={() => navigate("/")}>S'inscrire</button>
             </div>
