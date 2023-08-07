@@ -4,10 +4,12 @@ light gold: e4d58e
 */
 
 .navbar{
-    height: 50px;
+    height: max-content;
     display: flex;
     justify-content: center;
-    background-color: #e4d58e;
+    padding: 10px;
+    background-color: #242424;
+    border-bottom: 2px rgb(190, 190, 190) solid;
 }
 
 .navContainer{
@@ -19,15 +21,21 @@ light gold: e4d58e
 }
 
 .logo{
-    font-weight: 500;
-    color: black
+    font-size: 26px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.navItem {
+    border-left: 1px solid #ffffff;
 }
 
 .navButtonWhite{
     margin-left: 20px;
     border: solid black 1px;
     padding: 11px 20px;
-    border-radius: 11px;
     font-size: 16px;
     letter-spacing: 0.03em;
     transition: all 0.2s;
@@ -44,7 +52,7 @@ light gold: e4d58e
     margin-left: 20px;
     border: solid black 1px;
     padding: 11px 20px;
-    border-radius: 11px;
+
     font-size: 16px;
     color: white;
     background-color: black;

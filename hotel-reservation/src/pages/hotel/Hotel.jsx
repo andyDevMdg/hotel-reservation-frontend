@@ -6,11 +6,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesLeft, faAnglesRight, faCircleXmark, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import MailList from '../../components/mailList/MailList'
 import Footer from '../../components/footer/Footer'
+import { useNavigate } from 'react-router'
 
 function Hotel() {
 
   const [slideNumber, setSlideNumber] = useState(0);
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleOpen = (i) => {
     setSlideNumber(i);
@@ -50,26 +52,29 @@ function Hotel() {
     },
   ];
 
+  const handleClick = () => {
+      navigate("/login")
+    }
+  
+
   return (
     <div>
       <Navbar />
-      <Header type="list" />
       <div className="hotelContainer">
         {open && <div className="slider">
-          <FontAwesomeIcon icon={faCircleXmark} className="close" onClick={()=>setOpen(false)}/>
-          <FontAwesomeIcon icon={faAnglesLeft} 
-          className="arrow" 
-          onClick={()=>handleMove("left")}/>
+          <FontAwesomeIcon icon={faCircleXmark} className="close" onClick={() => setOpen(false)} />
+          <FontAwesomeIcon icon={faAnglesLeft}
+            className="arrow"
+            onClick={() => handleMove("left")} />
           <div className="sliderWrapper">
             <img src={photos[slideNumber].src} alt="" className="sliderimg" />
           </div>
 
-          <FontAwesomeIcon icon={faAnglesRight} 
-          className="arrow" 
-          onClick={()=>handleMove("right")}/>
-          </div>}
+          <FontAwesomeIcon icon={faAnglesRight}
+            className="arrow"
+            onClick={() => handleMove("right")} />
+        </div>}
         <div className="hotelWrapper">
-          <button className='bookNow'>RESERVER MAINENANT</button>
           <h1 className="hotelTitle">Grand Hotel</h1>
           <div className="hotelAddress">
             <FontAwesomeIcon icon={faLocationDot} />
@@ -82,9 +87,9 @@ function Hotel() {
             Book a stay over $114 at this property and get a free airport taxi
           </span>
           <div className="hotelImgContainer">
-            {photos.map((photo,i) => (
+            {photos.map((photo, i) => (
               <div className='hotelImgWrapper'>
-                <img onClick={() =>handleOpen(i)} src={photo.src} alt="" className="hotelImg" />
+                <img onClick={() => handleOpen(i)} src={photo.src} alt="" className="hotelImg" />
               </div>
             ))}
           </div>
@@ -114,7 +119,7 @@ function Hotel() {
               <h2>
                 <b>$945</b> (9 nights)
               </h2>
-              <button>Reserve or Book Now!</button>
+              <button onClick={handleClick}>Reserver</button>
             </div>
           </div>
         </div>

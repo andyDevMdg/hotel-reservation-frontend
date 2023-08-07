@@ -4,31 +4,46 @@ light gold: e4d58e
 */
 
 .header{
-    background-color: #e4d58e;
+    background-color: #242424;
     color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
 .headerContainer{
     width: 100%;
     max-width: 1280px;
-    margin: 20px 0px 100px 0px;
+    margin: 20px 0px;
 }
 
 .headerContainer.listMode{
     margin: 20px 0px 0px 0px;
 }
 
-.headerListItem{
+.headerListItem {
+    margin-bottom: 50px;
+}
+
+.headerListItem>button{
+    margin-top: 10px;
     border: solid white 2px;
     padding: 11px 20px;
-    border-radius: 11px;
     width: fit-content;
     font-size: 22px;
     letter-spacing: 0.01em;
-    margin-bottom: 50px;
+    transition: all .2s;
+}
+
+.headerListItem>button:hover {
+    box-shadow: 3px 3px 1px 1px black;
+    transform: translateY(-2px);
+}
+
+.headerListItem>button:active {
+    box-shadow: none;
+    transform: none;
 }
 
 .headerDesc{
@@ -37,10 +52,10 @@ light gold: e4d58e
 }
 
 .headerBtn{
-    background-color: white;
-    border: solid #333333 2px;
+    background-color: black;
+    color: white;
+    border: solid black 2px;
     padding: 11px 20px;
-    border-radius: 11px;
     font-size: 14px;
     letter-spacing: 0.01em;
     cursor: pointer;
@@ -53,8 +68,21 @@ light gold: e4d58e
     color: white;
 }
 
+.headerList {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+}
+
 .headerSearch {
-    height: 40px;
+    height: 60px;
     background-color: white;
     border: solid #333333 2px;
     border-radius: 11px;
@@ -62,7 +90,6 @@ light gold: e4d58e
     align-items: center;
     justify-content: space-around;
     padding: 10px 0px;
-    position: absolute;
     bottom: -30px;
     width: 100%;
     max-width: 1024px;

@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <div className='navbar'>
         <div className="navContainer">
-            <span className="logo">Hotel</span>
+            <span className="logo" onClick={() => navigate("/")}>~GRAND HOTEL~</span>
             <div className="navItem">
                 <button className="navButtonBlack" 
                 onClick={handleRegister}>S'inscrire</button>
