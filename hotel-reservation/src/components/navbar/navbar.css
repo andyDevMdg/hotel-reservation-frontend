@@ -40,29 +40,28 @@ light gold: e4d58e
     font-size: 16px;
     letter-spacing: 0.03em;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
 .navButtonWhite:hover{
     background-color: #333333;
     color: white;
     border: solid #333333 1px;
-    cursor: pointer;
 }
 
 .navButtonBlack{
     margin-left: 20px;
     border: solid black 1px;
     padding: 11px 20px;
-
     font-size: 16px;
     color: white;
     background-color: black;
     letter-spacing: 0.03em;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
 .navButtonBlack:hover{
     background-color: #333333;
     border: solid #333333 1px;
-    cursor: pointer;
 }
