@@ -9,15 +9,20 @@
     max-width: 1280px;
     display: flex;
     gap: 20px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .listSearch {
-    background-color: #e4d58e;
+    border: 0.5px solid lightgray;
+    background-color: white;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     position: sticky;
     top: 10px;
     height: max-content;
+    width: 17vw;
 }
 
 .listResult {
@@ -26,7 +31,9 @@
 
 .listSearchTitle {
     font-size: 20px;
-    color: #555555;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    letter-spacing: 0.02em;
 }
 
 .listItem {
@@ -37,46 +44,80 @@
 }
 
 .listItem>label {
-    font-size: 12px;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 0px 10px;
 }
 
 .listItem>span {
-    height: 30px;
-    background-color: white;
-    padding: 5px;
+    height: 40px;
+    background-color: #555555;
+    padding: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
+    border: 2px #555555 solid;
+    border-radius: 5px;
+    color: white;
+    transition: all .2s;
+    user-select: none;
+}
+
+.listItem>span:hover {
+    border: 2px lightgray solid;
+    background-color: lightgray;
+    color: black;
+    transform: translateY(-1px);
+    box-shadow: 1px 1px 5px 1px gray;
 }
 
 .listItem>input {
-    height: 30px;
-    border: none;
-    padding: 5px;
+    height: 40px;
+    outline: none;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.listSpecContainer {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .listSpec {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
-    color: #555555;
-    font-size: 12px;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.specText {
+    font-size: 14px;
 }
 
 .specInput {
-    width: 50px;
+    width: 100px;
+    height: 23px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
-.listSpecContainer {
-    padding: 10px;
-}
 
 .listSearch>button {
-    padding: 10px;
-    background-color: #333333;
+    background-color: black;
     color: white;
-    border: none;
-    width: 100%;
-    font-weight: 500;
+    border: solid black 2px;
+    padding: 11px 20px;
+    font-size: 14px;
+    letter-spacing: 0.01em;
     cursor: pointer;
+    width: 100%;
+    transition: background-color .2s, border .2s;
+}
+
+.listSearch>button:hover {
+    border: solid #333333 2px;
+    background-color: #333333;
 }

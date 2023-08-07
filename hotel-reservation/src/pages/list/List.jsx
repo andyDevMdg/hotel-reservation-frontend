@@ -24,13 +24,13 @@ function List() {
       <div className="listContainer">
         <div className="listWrapper">
           <div className="listSearch">
-            <h1 className="listSearchTitle">Recherche</h1>
+            <h1 className="listSearchTitle">Filtre :</h1>
             <div className="listItem">
-              <label>Destination</label>
+              <label>Destination :</label>
               <input type="text" placeholder={destination} />
             </div>
             <div className="listItem">
-              <label>Dates selectionnées</label>
+              <label>Dates selectionnées :</label>
               <span onClick={() => setOpenDate(!openDate)}>{`${format(date[0].startDate, "dd/MM/yyyy")} à ${format(date[0].endDate, "dd/MM/yyyy")}`}</span>
               {openDate && (<DateRange
                 onChange={(item) => setDate([item.selection])}
@@ -39,21 +39,19 @@ function List() {
               />)}
             </div>
             <div className="listItem">
-              <label>Spécificités</label>
+              <label>Spécificités :</label>
               <div className="listSpecContainer">
                 <div className="listSpec">
                   <span className="specText">
-                    Prix min
-                    <small> /nuitée</small>
+                    Prix min /nuitée
                   </span>
-                  <input type="number" className='specInput' />
+                  <input type="number" min={40000} className='specInput' placeholder='40000' step={1000}/>
                 </div>
                 <div className="listSpec">
                   <span className="specText">
-                    Prix max
-                    <small> /nuitée</small>
+                    Prix max /nuitée
                   </span>
-                  <input type="number" className='specInput' />
+                  <input type="number" min={40000} className='specInput' placeholder='40000' step={1000}/>
                 </div>
                 <div className="listSpec">
                   <span className="specText">
@@ -75,7 +73,7 @@ function List() {
                 </div>
               </div>
             </div>
-            <button>Rechrecher</button>
+            <button>RECHERCHER</button>
           </div>
           <div className="listResult">
             <SearchedItem/>
