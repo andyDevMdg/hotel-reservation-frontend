@@ -45,13 +45,13 @@ function List() {
                   <span className="specText">
                     Prix min /nuitée
                   </span>
-                  <input type="number" min={40000} className='specInput' placeholder='40000' step={1000}/>
+                  <input type="number" min={30000} className='specInput' placeholder='40000' step={1000}/>
                 </div>
                 <div className="listSpec">
                   <span className="specText">
                     Prix max /nuitée
                   </span>
-                  <input type="number" min={40000} className='specInput' placeholder='40000' step={1000}/>
+                  <input type="number" min={30000} className='specInput' placeholder='40000' step={1000}/>
                 </div>
                 <div className="listSpec">
                   <span className="specText">
