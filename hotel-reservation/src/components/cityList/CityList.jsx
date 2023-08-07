@@ -8,7 +8,6 @@ function CityList() {
     return (
         <div className='cityList'>
             <CityCaroussel />
-            
         </div>
     )
 }

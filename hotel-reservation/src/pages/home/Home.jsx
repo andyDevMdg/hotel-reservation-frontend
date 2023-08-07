@@ -21,7 +21,6 @@ function Home() {
         <h1 className="homeTitle">Nos meilleurs chambres</h1>
         <BestRoom/>
         <MailList/>
-        <Footer/>
       </div>
       </div>
   )
