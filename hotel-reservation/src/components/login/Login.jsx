@@ -8,7 +8,7 @@ function Login() {
       <div className="loginContainer">
         <div className="loginBody">
           <div className="hotelName">
-            <h1>GRAND HOTEL
+            <h1>GRAND HOTEL - Accès membre
             </h1>
           </div>
           <div className="loginInputContainer">
