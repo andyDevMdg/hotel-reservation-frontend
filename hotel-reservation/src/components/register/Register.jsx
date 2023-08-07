@@ -7,7 +7,7 @@ function Register() {
       <div className="formBackground">
         <div className="formBody">
           <div className="hotelName">
-            <h1>GRAND HOTEL
+            <h1>GRAND HOTEL - Devenir membre
             </h1>
           </div>
           <div className="formContainer">
@@ -17,14 +17,54 @@ function Register() {
                 <label>Nom d'utilisateur :</label>
                 <input type="text" className='formInputTag' />
               </div>
+              <div className='formInput'>
+                <label>Nom(s) :</label>
+                <input type="text" className='formInputTag' />
+              </div>
+              <div className='formInput'>
+                <label>Prénom(s):</label>
+                <input type="text" className='formInputTag' />
+              </div>
+              <div className='formInput'>
+                <label>Mot de passe :</label>
+                <input type="password" className='formInputTag' />
+              </div>              <div className='formInput'>
+                <label>Confirmation du mot de passe :</label>
+                <input type="password" className='formInputTag' />
+              </div>
+              <div className='formInput'>
+                <label>Date de naissance :</label>
+                <input type="date" className='formInputTag' />
+              </div>
+              <div className='formInput'>
+                <label>Numéro de carte d'idendité :</label>
+                <input type="text" className='formInputTag' />
+              </div>
+              <div className='formInput'>
+                <label>Numéro de téléphone :</label>
+                <input type="text" className='formInputTag' />
+              </div>
+              <div className='formInput'>
+                <label>Numéro de téléphone d'urgence:</label>
+                <input type="text" className='formInputTag' />
+              </div>
+              <div className='formInput'>
+                <label>Adresse e-mail :</label>
+                <input type="text" className='formInputTag' />
+              </div>
+              <div className='formInput'>
+                <label>Société :</label>
+                <input type="text" className='formInputTag' />
+              </div>
+              <div className='formInput'>
+                <label>Genre :</label>
+                <input type="text" className='formInputTag' />
+              </div>
             </form>
-            <div className="loginInput">
-              <input type="email" placeholder='E-mail' className='inputTag' />
-              <input type="password" className='inputTag' placeholder='Mot de passe' />
+            <p className='info'>*Veuillez vous assurez que vos informations personnelles soit correctes</p>
+            <div className="btnContainer">
+            <button className='formBtn'>S'inscrire</button>
             </div>
-            <button className='loginBtn'>Se connecter</button>
-            <p className='separator'>ou</p>
-            <button className='loginBtn'>S'inscrire</button>
           </div>
 
         </div>
