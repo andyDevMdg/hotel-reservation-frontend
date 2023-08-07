@@ -33,7 +33,7 @@ light gold: e4d58e
     width: fit-content;
     font-size: 22px;
     letter-spacing: 0.01em;
-    transition: all .2s;
+    transition: box-shadow,transform .2s;
 }
 
 .headerListItem>button:hover {
@@ -44,6 +44,10 @@ light gold: e4d58e
 .headerListItem>button:active {
     box-shadow: none;
     transform: none;
+}
+
+.headerTitle {
+    letter-spacing: 0.01em;
 }
 
 .headerDesc{
@@ -59,7 +63,7 @@ light gold: e4d58e
     font-size: 14px;
     letter-spacing: 0.01em;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: all .2s;
 }
 
 .headerBtn:hover{
@@ -85,7 +89,7 @@ light gold: e4d58e
     height: 60px;
     background-color: white;
     border: solid #333333 2px;
-    border-radius: 11px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-around;

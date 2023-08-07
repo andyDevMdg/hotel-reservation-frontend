@@ -14,6 +14,7 @@ function Home() {
       <Navbar/>
       <Header/>
       <div className="homeContainer">
+        <h1 className='homeTitle'> Chosissez parmi nos divers types de chambres</h1>
         <Discount/>
         <h1 className="homeTitle">Trouvez un de nos hotels dans la ville qui vous convient</h1>
         <CityList/>
