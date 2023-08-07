@@ -40,43 +40,43 @@ function CityCaroussel() {
                 draggable={false}
                 showDots={true}
                 responsive={responsive}>
-                <div className="cityListItem" onClick={() => navigate("/hotels")}>
+                <div className="cityListItem" onClick={() => navigate("/hotels/*")}>
                     <img src={nosyBe} alt="" className="cityListImg" />
                     <div className="cityListTitle">
                         <h3>Nosy Be</h3>
                     </div>
                 </div>
-                <div className="cityListItem" onClick={() => navigate("/hotels")}>
+                <div className="cityListItem" onClick={() => navigate("/hotels/*")}>
                     <img src={antsiranana} alt="" className="cityListImg" />
                     <div className="cityListTitle">
                         <h3>Antsiranana</h3>
                     </div>
                 </div>
-                <div className="cityListItem" onClick={() => navigate("/hotels")}>
+                <div className="cityListItem" onClick={() => navigate("/hotels/*")}>
                     <img src={majunga} alt="" className="cityListImg" />
                     <div className="cityListTitle">
                         <h3>Majunga</h3>
                     </div>
                 </div>
-                <div className="cityListItem" onClick={() => navigate("/hotels")}>
+                <div className="cityListItem" onClick={() => navigate("/hotels/*")}>
                     <img src={toamasina} alt="" className="cityListImg" />
                     <div className="cityListTitle">
                         <h3>Toamasina</h3>
                     </div>
                 </div>
-                <div className="cityListItem" onClick={() => navigate("/hotels")}>
+                <div className="cityListItem" onClick={() => navigate("/hotels/*")}>
                     <img src={antananarivo} alt="" className="cityListImg" />
                     <div className="cityListTitle">
                         <h3>Antananarivo</h3>
                     </div>
                 </div>
-                <div className="cityListItem" onClick={() => navigate("/hotels")}>
+                <div className="cityListItem" onClick={() => navigate("/hotels/*")}>
                     <img src={fianarantsoa} alt="" className="cityListImg" />
                     <div className="cityListTitle">
                         <h3>Fianarantsoa</h3>
                     </div>
                 </div>
-                <div className="cityListItem" onClick={() => navigate("/hotels")}>
+                <div className="cityListItem" onClick={() => navigate("/hotels/*")}>
                     <img src={tulear} alt="" className="cityListImg" />
                     <div className="cityListTitle">
                         <h3>Tulear</h3>

@@ -30,6 +30,10 @@ function List() {
               <input type="text" placeholder={destination} />
             </div>
             <div className="listItem">
+              <label>Type de chambre :</label>
+              <input type="text" placeholder={destination} />
+            </div>
+            <div className="listItem">
               <label>Dates selectionnées :</label>
               <span onClick={() => setOpenDate(!openDate)}>{`${format(date[0].startDate, "dd/MM/yyyy")} à ${format(date[0].endDate, "dd/MM/yyyy")}`}</span>
               {openDate && (<DateRange

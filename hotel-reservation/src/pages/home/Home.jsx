@@ -2,7 +2,7 @@ import React from 'react';
 import './home.css';
 import Navbar from '../../components/navbar/Navbar';
 import Header from '../../components/header/Header';
-import Discount from '../../components/discount/Discount';
+import Discount from '../../components/roomType/RoomType';
 import CityList from '../../components/cityList/CityList';
 import BestRoom from '../../components/bestRoom/BestRoom';
 import MailList from '../../components/mailList/MailList';
@@ -20,8 +20,8 @@ function Home() {
         <CityList/>
         <h1 className="homeTitle">Nos meilleurs chambres</h1>
         <BestRoom/>
-        <MailList/>
       </div>
+        <MailList/>
       </div>
   )
 }
