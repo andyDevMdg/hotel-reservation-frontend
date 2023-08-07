@@ -2,16 +2,18 @@
     width: 100%;
     max-width: 1280px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .cityListItem {
-    flex: 1;
+    width: 170px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 1px 1px 10px 1px rgb(185, 185, 185);
+    box-shadow: 1px 1px 8px 1px rgb(82, 82, 82);
+    background-color: #242424;
 }
 
 .cityListImg {
@@ -20,10 +22,16 @@
     object-fit: cover;
 }
 
+.cityListTitle {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
 .cityListTitle>h3 {
     font-size: 18px;
     font-weight: 300;
-    letter-spacing: 0.01em;
-    margin-left: 10px;
+    letter-spacing: 0.02em;
     margin-bottom: 5px;
+    color: white;
 }
